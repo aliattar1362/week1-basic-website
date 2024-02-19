@@ -232,7 +232,8 @@ footer .logo,
 img.secured-payments {
   display: block;
   margin: 0 20px 20px 50px;
-  width: 15%;
+  width: 35%;
+  height: 35%;
 }
 
 img.badges {
@@ -284,15 +285,6 @@ footer p {
   margin: 0 0 8px 0;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  /* Adjust this property */
-  grid-gap: 10px;
-  margin-top: 50px;
-}
-
 /* Apply double width to the first column in the first row */
 .col:first-child {
   grid-column: span 2;
@@ -313,6 +305,21 @@ footer .follow i {
   color: #465b52;
   padding-right: 4px;
   cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, min(350px));
+  justify-content: space-around;
+  gap: 5px;
+  margin: 20px;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Media Queries for Responsive Design */
